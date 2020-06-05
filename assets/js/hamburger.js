@@ -1,0 +1,7 @@
+// =======================
+//		Hamburger
+// =======================
+
+$('.toggle').on('click', function() {
+	$('.menu').toggleClass('active');
+});

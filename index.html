@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography - web by Magdalena Duma</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style__first_page.css">
+</head>
+<body>
+
+<!-- ===================================================
+                      1.  navbar
+=================================================== -->
+<div class='menu'>
+  <span class='toggle'>
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <div class='menuContent'>
+    <ul>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dzieci.html">Fotografia Dziecięca</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slub.html">Fotografia Ślubna</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cennik.html">Cennik</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</div>
+
+<!-- ===================================================
+                      2.  middle
+=================================================== -->
+<div class="cont">
+  <div class="app">
+    <div class="app__bgimg">
+      <div class="app__bgimg-image app__bgimg-image--1"></div>
+      <div class="app__bgimg-image app__bgimg-image--2"></div>
+    </div> <!--/ .app__bgimg-->
+    
+    <div class="app__img">
+      <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+    </div> <!--/ .app__img-->
+    
+    <div class="app__text app__text--1" style="left:50%">
+      <div class="app__text-line app__text-line--4"><img src="assets/image/logo/logo.png" alt="logo" class="logo" width="95%"></div>
+      <div class="app__text-line app__text-line--3"><hr>Ślubna</div>
+    </div> <!--/ .app__text .app__text--1-->
+    
+    <div class="app__text app__text--2">
+      <div class="app__text-line app__text-line--4"><img src="assets/image/logo/logo.png" alt="logo" class="logo" width="60%"></div>
+      <div class="app__text-line app__text-line--3"><hr style="width:55%">Dziecięca</div>
+    </div> <!--/ .app__text app__text--2-->
+  
+  </div> <!--/ .app-->
+  
+  <div class="pages">
+    <ul class='pages__list'>
+      <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+      <li data-target='2' class='pages__item pages__item--2'></li>
+    </ul>
+  </div>
+</div> <!--/ .cont -->
+
+<!-- ===================================================
+                      3.  footer
+=================================================== -->
+<footer>&#169; Magdalena Duma, maliszewska87@gmail.com</footer>
+
+<!-- ===================================================
+                      4.  add script
+=================================================== -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="assets/js/hamburger.js"></script>
+<script src="assets/js/first__page.js"></script>
+
+</body>
+</html>
