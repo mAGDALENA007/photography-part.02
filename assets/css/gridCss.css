@@ -1,0 +1,153 @@
+
+/* ===================================================
+      Global data - next page web
+=================================================== */
+body{
+  background-image:url(../image/background/2.png); 
+  -webkit-background-size: cover !important; 
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+#wrapper {
+  top: 90px;
+  padding: 2rem 0;
+  position: relative;
+  max-width: 1000px;
+  overflow: hidden;
+  background-color: rgba(253, 253, 253, 0.562);
+}
+.title__gallery {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.wedding.title__gallery {
+  position: absolute;
+  top: 80%;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===========================
+    GRID gallery - child page
+=========================== */
+#cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gallery {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: min-content;
+  grid-auto-flow: dense;
+}
+.vertical {
+  grid-row: span 2;
+}
+#gallery div {
+  color: aliceblue;
+  display: inline-block; /* change the default display type to inline-block */
+  overflow: hidden;      /* hide the overflow */
+}
+#gallery div img {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  box-shadow: 0px -3px 8px #ccc;
+  transition: all .2s ease;
+  vertical-align: middle;
+}
+#gallery div img:hover {
+  -webkit-transform:scale(1.1);
+}
+
+/* ===========================
+    Gallery - wedding page
+=========================== */
+#contBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 50s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotate(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+#box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+#box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===========================
+    CONTACT - page
+=========================== */
+#contact {
+  display: grid;
+  grid-template-columns: 300px 2fr;
+  grid-template-rows: 300px 2fr;
+  grid-gap: 0;
+}
+#add {
+  text-align: center;
+  padding: 10px;
+}
+#add h3 {
+  align-items: center;
+  padding-top: 50%;
+}
+#map iframe {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+       filter: grayscale(100%);
+}
+#gap {
+  background: #000;
+  color: white;
+  padding: 60px 10px 0px 10px;
+}
+#adress {
+  padding: 10px;
+  margin-bottom: 0;
+}
+#adress small {
+  padding: 0;
+  margin: 0;
+}
