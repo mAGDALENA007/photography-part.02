@@ -100,7 +100,7 @@ html {
   transition: opacity 0.3s ease 0.3s;
   cursor: pointer;
   position: relative;
-  font-size: 20px;
+  font-size: 20px !important;
   padding: 1.5% 0;
 }
 .menu .menuContent ul li a,
@@ -117,11 +117,14 @@ html {
                         Footer
 =================================================== */
 footer {
-    z-index: 1; 
-    background-color: lightgray; 
-    height: 4vh; 
-    display: flex; 
-    justify-content: center
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;    
+  z-index: 1; 
+  background-color: whitesmoke; 
+  height: 4vh; 
 }
 
 /* ===================================================
