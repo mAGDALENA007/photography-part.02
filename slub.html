@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <title>Photography - web by Magdalena Duma</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style__next_page.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="assets/css/gridCss.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+
+    <script>
+			$(function() {
+				var foo = $('#box');
+				foo.poptrox({
+					usePopupCaption: true,
+				});
+			});
+		</script>
+  </head>
 <body>
 
 <!-- ===================================================
@@ -29,9 +41,6 @@
         <a class="nav-link" href="slub.html">Fotografia Ślubna</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cennik.html">Cennik</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="kontakt.html">Kontakt</a>
       </li>
     </ul>
@@ -41,7 +50,22 @@
 <!-- ===================================================
                       2.  middle
 =================================================== -->
-<div class="cont">ślub</div>
+<div id="contBox">
+  
+  <div class="wrapper">
+    <p class="wedding title__gallery">Fotografia Ślubna</p>
+  <div id="box">
+    <span style="--i:1;"><a href="assets/image/photos/sluby/unS1.jpg"><img src="assets/image/photos/sluby/unS1.jpg" title="Ślub"></a></span>
+    <span style="--i:2;"><a href="assets/image/photos/sluby/unS2.jpg"><img src="assets/image/photos/sluby/unS2.jpg" title="Wesele"></a></span>
+    <span style="--i:3;"><a href="assets/image/photos/sluby/unS3.jpg"><img src="assets/image/photos/sluby/unS3.jpg" title="Ślub"></a></span>
+    <span style="--i:4;"><a href="assets/image/photos/sluby/unS4.jpg"><img src="assets/image/photos/sluby/unS4.jpg" title="Wesele"></a></span>
+    <span style="--i:5;"><a href="assets/image/photos/sluby/unS5.jpg"><img src="assets/image/photos/sluby/unS5.jpg" title="Ślub"></a></span>
+    <span style="--i:6;"><a href="assets/image/photos/sluby/unS6.jpg"><img src="assets/image/photos/sluby/unS6.jpg" title="Wesele"></a></span>
+    <span style="--i:7;"><a href="assets/image/photos/sluby/unS7.jpg"><img src="assets/image/photos/sluby/unS7.jpg" title="Ślub"></a></span>
+    <span style="--i:8;"><a href="assets/image/photos/sluby/unS8.jpg"><img src="assets/image/photos/sluby/unS8.jpg" title="Wesele"></a></span>
+  </div> <!--/ .box-->
+</div>
+</div> <!--/. contBox-->
 <!-- ===================================================
                       3.  footer
 =================================================== -->
@@ -50,8 +74,8 @@
 <!-- ===================================================
                       4.  add script
 =================================================== -->
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="assets/js/hamburger.js"></script>
+<script src="assets/js/image__gallery.js"></script>
 
 </body>
 </html>
